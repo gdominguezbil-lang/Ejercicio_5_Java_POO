@@ -8,7 +8,7 @@ public class Alimentos {
 	private Double grasas;
 	private Double proteinas;
 	private Double Carbohidratos;
-	private String Tipo;
+	private String tipo;
 	
 	public Alimentos(String nombre, String estado, Double calorias, Double grasas, Double proteinas,
 			Double carbohidratos, String tipo) {
@@ -18,8 +18,8 @@ public class Alimentos {
 		this.calorias = calorias;
 		this.grasas = grasas;
 		this.proteinas = proteinas;
-		Carbohidratos = carbohidratos;
-		Tipo = tipo;
+		this.Carbohidratos = carbohidratos;
+		this.tipo = tipo;
 	}
 	
 	public Alimentos() {
@@ -75,16 +75,16 @@ public class Alimentos {
 	}
 
 	public String getTipo() {
-		return Tipo;
+		return tipo;
 	}
 
 	public void setTipo(String tipo) {
-		Tipo = tipo;
+		this.tipo = tipo;
 	}
 
 	public String toString() {
 		return "Alimentos [nombre=" + nombre + ", estado=" + estado + ", calorias=" + calorias + ", grasas=" + grasas
-				+ ", proteinas=" + proteinas + ", Carbohidratos=" + Carbohidratos + ", Tipo=" + Tipo + "]";
+				+ ", proteinas=" + proteinas + ", Carbohidratos=" + Carbohidratos + ", Tipo=" + tipo + "]";
 	}
 
 }

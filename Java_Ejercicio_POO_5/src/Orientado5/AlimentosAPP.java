@@ -2,7 +2,6 @@ package Orientado5;
 import java.util.Scanner;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class AlimentosAPP {
 
@@ -32,7 +31,7 @@ public class AlimentosAPP {
 				Alimentos.setCarbohidratos(Double.valueOf(cargas[5]));
 				Alimentos.setTipo(cargas[6]);
 				alimentosList.add(Alimentos);
-				System.out.println(Alimentos.getNombre() + Alimentos.getEstado() + Alimentos.getCalorias() + Alimentos.getTipo());
+				System.out.println(Alimentos.toString());
 				cantidadAli++;
 			}
 			System.out.println("Se han encontrado: " + cantidadAli + " alimentos...");
@@ -48,6 +47,7 @@ public class AlimentosAPP {
 					break;
 				
 				case 2:
+					mostrarAlimentos(alimentosList, sc);
 					break;
 					
 				case 3:
@@ -90,6 +90,36 @@ public class AlimentosAPP {
 		if(pos == -1) {
 			System.out.println("[!] ERROR: no se ha encontrado ese alimento");
 		}
+	}
+	
+	public static void mostrarAlimentos(ArrayList<Alimentos> alimentosList, Scanner sc) {
+		
+		//hacer un for( int i = 0; i < cantidad; i++ )
+		//dentro del for hay que hacer un while, de mientras se llame igual que el nombre introducido que printe en pantalla los datos
+	}
+	
+	public static void mostrarTerer(Scanner sc, int cantidad, ArrayList<Alimentos> alimentosList) {
+		int posicion = 0;
+		System.out.println("Introduce la posicion que desee: ");
+		posicion = Integer.parseInt(sc.nextLine()) - 1; //tiene en cuenta el usuario
+		
+		//luego hay que poner un for para mostrar las tres posiciones menos
+	}
+	
+	public static void calcularCalorias() {
+		
+		//hay que hacer regla de tres para hacer por cada tantos gramos el alimento seleccionado
+		
+	}
+	
+	public static void guardarDatos(File file, ArrayList<Alimentos> alimentosList) {
+		
+		/*
+		 * for (int i = 0; i < alimentosList.length(), i++) {
+		 * 	
+		 * }
+		 */
+		
 	}
 
 }
